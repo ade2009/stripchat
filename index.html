@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live Show - BOA__</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    #stripchat-widget {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 4 / 3;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live Show - BOA__</h1>
+
+  <div id="stripchat-widget"></div>
+
+  <script src="https://assets.strpst.com/assets/plugin-lib.js?version=011"></script>
+  <script>
+    StripChat.Widget.insert({
+      container: document.getElementById('stripchat-widget'),
+      width: "100%",
+      height: "100%",
+      models: ["BOA__"], // Ganti username model di sini
+      autoplay: true,
+      mute: false
+    });
+  </script>
+</body>
+</html>
